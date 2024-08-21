@@ -1,0 +1,15 @@
+spin_manifest_version = 2
+
+[application]
+name = "aos_hello_world"
+version = "0.1.0"
+description = "Advent of Spin 2022-01"
+
+[[trigger.http]]
+route = "/..."
+component = "aos-hello-world"
+
+[component.aos-hello-world]
+source = "target/wasm32-wasi/release/aos_hello_world.wasm"
+[component.aos-hello-world.build]
+command = "cargo build --target wasm32-wasi --release"

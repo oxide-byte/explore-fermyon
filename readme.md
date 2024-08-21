@@ -6,12 +6,16 @@ This is an experimental repository to explore the product https://www.fermyon.co
 
 > Pioneering the next wave of cloud computing.
 
-> **Spoiler** I t will also include solutions for the challenge https://github.com/fermyon/summer-of-spin
+---
+
+## cloud_start
+
+This is the starting application, documented on the site as Quickstart: https://developer.fermyon.com/cloud/quickstart
 
 ---
 
-## 001-cloud-start
+## challenges
 
-This is the starting application, documented on the site as Quickstart: https://developer.fermyon.com/cloud/quickstart
+> **Spoiler** I t will also include solutions for the challenge https://github.com/fermyon/summer-of-spin
 
 ---

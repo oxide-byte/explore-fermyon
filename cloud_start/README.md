@@ -6,9 +6,19 @@ Check out more information here: [The Fermyon Cloud Quickstart](https://develope
 
 ---
 
+Login to Fermyon Cloud
+
 ````shell
 spin login
 ````
+
+For local Testing
+
+````shell
+spin build --up
+````
+
+Deploying
 
 ```shell
 spin deploy
