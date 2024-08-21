@@ -1,0 +1,15 @@
+spin_manifest_version = 2
+
+[application]
+name = "aos_route_me"
+version = "0.1.0"
+description = "Advent of Spin 2022-02"
+
+[[trigger.http]]
+route = "/..."
+component = "aos-route-me"
+
+[component.aos-route-me]
+source = "target/wasm32-wasi/release/aos_route_me.wasm"
+[component.aos-route-me.build]
+command = "cargo build --target wasm32-wasi --release"
