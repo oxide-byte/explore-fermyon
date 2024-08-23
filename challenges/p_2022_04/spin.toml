@@ -1,0 +1,15 @@
+spin_manifest_version = 2
+
+[application]
+name = "aos_calc_distance"
+version = "0.1.0"
+description = "Advent of Spin 2022-04"
+
+[[trigger.http]]
+route = "/distance-latlong"
+component = "aos-calc-dist"
+
+[component.aos-calc-dist]
+source = "target/wasm32-wasi/release/aos_calc_dist.wasm"
+[component.aos-calc-dist.build]
+command = "cargo build --target wasm32-wasi --release"

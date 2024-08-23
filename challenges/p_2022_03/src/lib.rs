@@ -3,7 +3,7 @@ use spin_sdk::{http::{Request, Response}, http_component};
 use spin_sdk::http::{IntoResponse, Params, Router};
 
 #[http_component]
-fn aos_route_me(req: Request) -> Response {
+fn aos_home_page(req: Request) -> Response {
 
     let mut router = Router::new();
     router.get("/", home_page);
@@ -12,7 +12,6 @@ fn aos_route_me(req: Request) -> Response {
 }
 
 pub fn home_page(_: Request, _: Params) -> Result<impl IntoResponse> {
-    println!("*** Lower Page");
 
     let page = "\
     <html>

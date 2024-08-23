@@ -1,6 +1,6 @@
-# Challenge 2022-02
+# Challenge 2022-04
 
-https://github.com/fermyon/advent-of-spin/tree/main/2022/CHALLENGE-2
+https://github.com/fermyon/advent-of-spin/tree/main/2022/CHALLENGE-4
 
 ---
 
