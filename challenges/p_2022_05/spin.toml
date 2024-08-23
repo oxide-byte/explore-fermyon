@@ -1,0 +1,16 @@
+spin_manifest_version = 2
+
+[application]
+name = "aos_planet_scale"
+version = "0.1.0"
+description = "Advent of Spin 2022-05"
+
+[[trigger.http]]
+route = "/..."
+component = "aos-planet-scale"
+
+[component.aos-planet-scale]
+source = "target/wasm32-wasi/release/aos_planet_scale.wasm"
+key_value_stores = ["default"]
+[component.aos-planet-scale.build]
+command = "cargo build --target wasm32-wasi --release"
