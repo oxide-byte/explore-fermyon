@@ -27,3 +27,7 @@ This is the starting application, documented on the site as Quickstart: https://
 ## todo
 
 A Fullstack Todo application build on WASM Leptos as frontend and WASM API with SQLITE modules of Fermyon. https://github.com/oxide-byte/explore-fermyon/tree/master/todo
+
+## ai
+
+A simple application calling an LLAMA Service as Serverless

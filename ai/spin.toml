@@ -1,0 +1,20 @@
+spin_manifest_version = 2
+
+[application]
+name = "ai"
+version = "0.1.0"
+authors = ["oxide-byte <oxidebyte@gmail.com>"]
+description = ""
+
+[[trigger.http]]
+route = "/..."
+component = "ai"
+
+[component.ai]
+source = "target/wasm32-wasi/release/ai.wasm"
+allowed_http_hosts = ["https://www.fermyon.com/"]
+ai_models = ["llama2-chat"]
+
+[component.ai.build]
+command = "cargo build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]
